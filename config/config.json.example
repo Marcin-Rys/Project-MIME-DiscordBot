@@ -1,25 +1,13 @@
 {
-    "notification_channel_id": ,
-    "default_language": "en",
-    "language": "en",
-
     "bot_settings": {
         "status_change_interval_seconds": 180
     },
 
-    "directories": {
-        "data_dir": "data/",
-        "lang_dir": "lang"
-    },
-
-    "module_files": {
+    "data_files": {
         "jokes_file": "jokes.json",
         "responses_file": "responses.json",
-        "swears_file": "swears.json", 
+        "swears_file": "swears.json",
         "statuses_file": "statuses.json",
         "ama_file": "ama.json"
-    },
-    "database_files": {
-        "sqlite_database":"data/sqlite_database.db"
     }
 }

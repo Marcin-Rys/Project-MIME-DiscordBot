@@ -102,7 +102,7 @@ ama.json
             "answers": [
                 "No.",
                 "Negative!",
-                "Nah!
+                "Nah!"
             ]
         },
         {

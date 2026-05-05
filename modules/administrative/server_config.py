@@ -6,7 +6,7 @@ import aiosqlite
 
 class WelcomeMessageModal(Modal, title="Edit welcome message"):
     def __init__(self, db_path: str, current_message: str=""):
-        super().__init()
+        super().__init__()
         self.db_path = db_path
         self.message_input = TextInput(
             label = "Welcome message",

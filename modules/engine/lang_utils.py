@@ -55,9 +55,9 @@ class LangUtils(app_commands.Translator):
         #fallback to en language
         return self.translations.get("en", {}).get(module_name, {}).get(string_key)
     
-    def get_translation(self, key: str, locale: discord.Locale, fallback: str = "Błąd", **kwargs) -> str:
+    def get_translation(self, key: str, locale=None, fallback: str = "Błąd", **kwargs) -> str:
         
-        lang_code = str(locale).split('-')[0]
+        lang_code = str(locale).split('-')[0] if locale else "en"
         try:
             module_name, string_key = key.split(":", 1)
             module_name = module_name.lower()
