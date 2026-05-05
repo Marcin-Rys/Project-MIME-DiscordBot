@@ -9,7 +9,7 @@
                 "joke2",
                 "joke3"
             ]
-                },
+        },
 		{
 			"category_name":"CategoryABC",
 			"jokes": 
@@ -17,8 +17,7 @@
                         "joke1",
                         "joke2",
                         "joke3"
-                    ],
-
+                    ]
         },
         {
 			"category_name":"CategoryCZX",

@@ -1,0 +1,51 @@
+version: "3.9"
+
+services:
+  discord-bot:
+    build: .
+    container_name: project-mime-bot
+    restart: unless-stopped
+
+    # Pass environment variables from the .env file on the host
+    env_file:
+      - .env
+
+    volumes:
+      # Persistent storage for the SQLite database
+      - ./data:/app/data
+      # Bot configuration (modules.json, config.json, cooldowns.json)
+      - ./config:/app/config
+      # Language packs
+      - ./lang:/app/lang
+
+    # Optional: only start after a database service is healthy.
+    # Uncomment the postgres section below and this depends_on block
+    # if you migrate to PostgreSQL in the future.
+    # depends_on:
+    #   postgres:
+    #     condition: service_healthy
+
+# ---------------------------------------------------------------------------
+# Uncomment the block below to run a PostgreSQL database alongside the bot.
+# You will also need to update the bot code to use asyncpg / SQLAlchemy
+# instead of aiosqlite, and adjust DB_PATH / DATABASE_URL in .env.
+# ---------------------------------------------------------------------------
+#
+#  postgres:
+#    image: postgres:16-alpine
+#    container_name: project-mime-db
+#    restart: unless-stopped
+#    environment:
+#      POSTGRES_USER: ${POSTGRES_USER:-mime}
+#      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+#      POSTGRES_DB: ${POSTGRES_DB:-mimedb}
+#    volumes:
+#      - postgres_data:/var/lib/postgresql/data
+#    healthcheck:
+#      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-mime}"]
+#      interval: 10s
+#      timeout: 5s
+#      retries: 5
+#
+# volumes:
+#   postgres_data:

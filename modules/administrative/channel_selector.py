@@ -22,14 +22,12 @@ class ChannelSelectorDropdown(Select):
 
         try:
             async with aiosqlite.connect(db_path) as db:
-                # Using "INSERT ... ON CONFLICT... UPDATE" - safest way, will create new entry or update existing one for such server
-                await db.execute
-                (
-                """
-                INSERT INTO guild_settings (guild_id, notification_channel_id) VALUES (?,?)
-                ON CONFLICT(guild_id) DO UPDATE SET notification_channel_id = excluded.notification.channel.id 
-                """,
-                (guild_id, selected_channel_id)
+                await db.execute(
+                    """
+                    INSERT INTO guild_settings (guild_id, notification_channel_id) VALUES (?,?)
+                    ON CONFLICT(guild_id) DO UPDATE SET notification_channel_id = excluded.notification_channel_id
+                    """,
+                    (guild_id, selected_channel_id)
                 )
                 await db.commit()
             

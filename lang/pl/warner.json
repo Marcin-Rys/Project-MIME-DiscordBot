@@ -1,0 +1,20 @@
+{
+    "group_name": "ostrzeżenia",
+    "group_description": "Zarządzaj ostrzeżeniami użytkowników.",
+
+    "command_check_name": "sprawdź",
+    "command_check_description": "Sprawdź liczbę ostrzeżeń użytkownika.",
+
+    "command_reset_name": "resetuj",
+    "command_reset_description": "Zresetuj ostrzeżenia użytkownika.",
+
+    "command_warn_name": "ostrzeż",
+    "command_warn_description": "Ręcznie wyślij ostrzeżenie użytkownikowi przez DM.",
+
+    "option_user_description": "Użytkownik do sprawdzenia.",
+    "option_feature_description": "Nazwa modułu/funkcji (zostaw puste dla wszystkich).",
+    "option_user_reset_description": "Użytkownik, którego ostrzeżenia chcesz zresetować.",
+    "option_feature_reset_description": "Nazwa modułu/funkcji (zostaw puste aby zresetować wszystkie).",
+    "option_warn_user_description": "Użytkownik do ostrzeżenia.",
+    "option_warn_reason_description": "Powód ostrzeżenia."
+}

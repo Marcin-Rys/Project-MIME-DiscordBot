@@ -4,28 +4,27 @@ jokes.json
 {
 	"joke_categories":
     [
-		{ 
+		{
 			"category_name":"CategoryXYZ",
-			"jokes": 
+			"jokes":
 			[
-                "joke1", 
+                "joke1",
                 "joke2",
                 "joke3"
             ]
-                },
+        },
 		{
 			"category_name":"CategoryABC",
-			"jokes": 
+			"jokes":
 					[
                         "joke1",
                         "joke2",
                         "joke3"
-                    ],
-
+                    ]
         },
         {
 			"category_name":"CategoryCZX",
-			"jokes": 
+			"jokes":
 					[
                         "joke1",
                         "joke2",
@@ -38,14 +37,14 @@ jokes.json
 responses.json:
 {
     "message1":"response1",
-    "message2":response2",
+    "message2":"response2",
     "knock knock":"who's there?"
 }
 
-statuses.json 
+statuses.json
 
 {
-    "status_categories": 
+    "status_categories":
     [
         {
         "category_name":"Funny",
@@ -102,7 +101,7 @@ ama.json
             "answers": [
                 "No.",
                 "Negative!",
-                "Nah!
+                "Nah!"
             ]
         },
         {

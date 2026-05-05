@@ -62,7 +62,7 @@ class CounterCommands(commands.Cog):
 
             ### removing from database ###
             await db.execute("DELETE FROM role_counters WHERE guild_id = ? AND role_id = ?", (guild.id, role.id))
-            await db.commit
+            await db.commit()
 
         channel = guild.get_channel(channel_id)
         if channel:
