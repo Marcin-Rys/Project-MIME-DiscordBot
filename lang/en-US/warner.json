@@ -1,0 +1,20 @@
+{
+    "group_name": "warnings",
+    "group_description": "Manage user warnings.",
+
+    "command_check_name": "check",
+    "command_check_description": "Check warning count for a user.",
+
+    "command_reset_name": "reset",
+    "command_reset_description": "Reset warnings for a user.",
+
+    "command_warn_name": "warn",
+    "command_warn_description": "Manually warn a user via DM.",
+
+    "option_user_description": "User to check warnings for.",
+    "option_feature_description": "Feature/module name (leave blank for all).",
+    "option_user_reset_description": "User whose warnings to reset.",
+    "option_feature_reset_description": "Feature/module name (leave blank to reset all).",
+    "option_warn_user_description": "User to warn.",
+    "option_warn_reason_description": "Reason for the warning."
+}

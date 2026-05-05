@@ -4,7 +4,7 @@ from discord import app_commands
 import aiosqlite
 from typing import List
 
-class RolePanelAdmin(commands.cog):
+class RolePanelAdmin(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
         self.db_path = self.bot.config["database_path"]
@@ -29,7 +29,7 @@ class RolePanelAdmin(commands.cog):
     #Create group
     @admin_role_group.command(name="create_group", description="Creates new role to be selected.") # TODO language pack
     @app_commands.describe(name="Group name (ex. Notifications)", description="Short group description") #TODO language pack
-    @app_commands.check.has_permissions(manage_roles=True)
+    @app_commands.checks.has_permissions(manage_roles=True)
     async def create_group(self, interaction: discord.Interaction, name:str, description:str):
         await interaction.response.defer(ephemeral=True)
         try:

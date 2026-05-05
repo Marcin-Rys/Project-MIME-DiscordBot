@@ -1,0 +1,66 @@
+{
+    "group_name": "admin",
+    "group_description": "Bot administration commands.",
+
+    "module_group_name": "module",
+    "module_group_description": "Enable or disable bot modules for this server.",
+
+    "module_enable_name": "enable",
+    "module_enable_description": "Enable a module for this server.",
+
+    "module_disable_name": "disable",
+    "module_disable_description": "Disable a module for this server.",
+
+    "module_list_name": "list",
+    "module_list_description": "List all configured modules for this server.",
+
+    "module_name_description": "Name of the module.",
+
+    "joke_group_name": "joke",
+    "joke_group_description": "Manage jokes for this server.",
+
+    "joke_add_name": "add",
+    "joke_add_description": "Add a joke to the database for this server.",
+
+    "joke_remove_name": "remove",
+    "joke_remove_description": "Remove a joke from the database by its ID.",
+
+    "joke_list_name": "list",
+    "joke_list_description": "List jokes for this server (optionally filtered by category).",
+
+    "joke_category_description": "Category of the joke.",
+    "joke_text_description": "The joke text.",
+    "joke_id_description": "ID of the joke to remove.",
+    "joke_list_category_description": "Filter by category (optional).",
+
+    "response_group_name": "response",
+    "response_group_description": "Manage auto-responder triggers for this server.",
+
+    "response_add_name": "add",
+    "response_add_description": "Add an auto-responder trigger.",
+
+    "response_remove_name": "remove",
+    "response_remove_description": "Remove an auto-responder trigger.",
+
+    "response_list_name": "list",
+    "response_list_description": "List all auto-responder triggers for this server.",
+
+    "response_trigger_description": "The trigger phrase (message content to match).",
+    "response_text_description": "The response text the bot will send.",
+    "response_remove_trigger_description": "The trigger phrase to remove.",
+
+    "cooldown_group_name": "cooldown",
+    "cooldown_group_description": "Configure cooldown limits for features on this server.",
+
+    "cooldown_set_name": "set",
+    "cooldown_set_description": "Set a cooldown limit for a feature.",
+
+    "cooldown_list_name": "list",
+    "cooldown_list_description": "List cooldown rules configured for this server.",
+
+    "cooldown_feature_description": "Feature/command name (e.g. sra_command).",
+    "cooldown_limit_name_description": "Descriptive name for this limit (e.g. '15 minute limit').",
+    "cooldown_limit_count_description": "Maximum uses allowed within the period.",
+    "cooldown_period_description": "Time period in seconds.",
+    "cooldown_dm_threshold_description": "Warning level at which a DM is sent (optional)."
+}

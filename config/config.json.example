@@ -1,5 +1,5 @@
 {
-    "notification_channel_id": ,
+    "notification_channel_id": null,
     "default_language": "en",
     "language": "en",
 
@@ -12,10 +12,10 @@
         "lang_dir": "lang"
     },
 
-    "module_files": {
+    "data_files": {
         "jokes_file": "jokes.json",
         "responses_file": "responses.json",
-        "swears_file": "swears.json", 
+        "swears_file": "swears.json",
         "statuses_file": "statuses.json",
         "ama_file": "ama.json"
     },

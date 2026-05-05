@@ -1,0 +1,66 @@
+{
+    "group_name": "admin",
+    "group_description": "Komendy administracyjne bota.",
+
+    "module_group_name": "moduł",
+    "module_group_description": "Włącz lub wyłącz moduły bota na tym serwerze.",
+
+    "module_enable_name": "włącz",
+    "module_enable_description": "Włącz moduł na tym serwerze.",
+
+    "module_disable_name": "wyłącz",
+    "module_disable_description": "Wyłącz moduł na tym serwerze.",
+
+    "module_list_name": "lista",
+    "module_list_description": "Wyświetl wszystkie skonfigurowane moduły na tym serwerze.",
+
+    "module_name_description": "Nazwa modułu.",
+
+    "joke_group_name": "kawał",
+    "joke_group_description": "Zarządzaj kawałami na tym serwerze.",
+
+    "joke_add_name": "dodaj",
+    "joke_add_description": "Dodaj kawał do bazy danych dla tego serwera.",
+
+    "joke_remove_name": "usuń",
+    "joke_remove_description": "Usuń kawał z bazy danych na podstawie jego ID.",
+
+    "joke_list_name": "lista",
+    "joke_list_description": "Wyświetl kawały na tym serwerze (opcjonalnie filtruj po kategorii).",
+
+    "joke_category_description": "Kategoria kawału.",
+    "joke_text_description": "Treść kawału.",
+    "joke_id_description": "ID kawału do usunięcia.",
+    "joke_list_category_description": "Filtruj po kategorii (opcjonalne).",
+
+    "response_group_name": "odpowiedź",
+    "response_group_description": "Zarządzaj wyzwalaczami auto-odpowiedzi na tym serwerze.",
+
+    "response_add_name": "dodaj",
+    "response_add_description": "Dodaj wyzwalacz auto-odpowiedzi.",
+
+    "response_remove_name": "usuń",
+    "response_remove_description": "Usuń wyzwalacz auto-odpowiedzi.",
+
+    "response_list_name": "lista",
+    "response_list_description": "Wyświetl wszystkie wyzwalacze auto-odpowiedzi na tym serwerze.",
+
+    "response_trigger_description": "Fraza wyzwalająca (zawartość wiadomości do dopasowania).",
+    "response_text_description": "Tekst odpowiedzi, którą wyśle bot.",
+    "response_remove_trigger_description": "Fraza wyzwalająca do usunięcia.",
+
+    "cooldown_group_name": "cooldown",
+    "cooldown_group_description": "Konfiguruj limity cooldown dla funkcji na tym serwerze.",
+
+    "cooldown_set_name": "ustaw",
+    "cooldown_set_description": "Ustaw limit cooldown dla funkcji.",
+
+    "cooldown_list_name": "lista",
+    "cooldown_list_description": "Wyświetl reguły cooldown skonfigurowane dla tego serwera.",
+
+    "cooldown_feature_description": "Nazwa funkcji/komendy (np. sra_command).",
+    "cooldown_limit_name_description": "Opisowa nazwa tego limitu (np. 'limit 15 minut').",
+    "cooldown_limit_count_description": "Maksymalna liczba użyć w danym okresie.",
+    "cooldown_period_description": "Okres czasu w sekundach.",
+    "cooldown_dm_threshold_description": "Poziom ostrzeżeń, przy którym zostanie wysłany DM (opcjonalne)."
+}

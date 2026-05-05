@@ -1,0 +1,39 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and instance-specific config
+.env
+config/config.json
+config/modules.json
+config/cooldowns.json
+
+# Data files (volume-mounted at runtime)
+data/sqlite_database.db
+data/*.db
+data/responses.json
+data/jokes.json
+data/statuses.json
+data/swears.json
+data/ama.json
+sounds/
+
+# Logs
+*.log
+
+# OS artefacts
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
