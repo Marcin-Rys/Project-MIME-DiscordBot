@@ -3,7 +3,9 @@
         "channel_selector": true,
         "counter_commands": true,
         "command_refresher": false,
-        "owner": true
+        "owner": true,
+        "server_config": true,
+        "role_manager_admin": false
     },
 
     "engine":{
@@ -16,16 +18,17 @@
     "features": {
         "on_member_join": true,
         "role_counter": false,
+        "role_manager": false,
         "status": true
     },
 
     "fun": {
-        "dice_roll":true,
+        "dice_roll": true,
         "jokes": true,
-        "responses": true,
+        "auto_responder": true,
         "sra": true,
         "swearer": true,
-        "ama":true
+        "ama": true
     }
 }
   
